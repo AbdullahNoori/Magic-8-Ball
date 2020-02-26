@@ -24,11 +24,13 @@ class ViewController: UIViewController {
         
         userResponseLabel.text = ""
         userResponseLabel.font = UIFont(name: "Bangla Sangam MN", size: 30.0)
-        
+        userResponseLabel.layer.backgroundColor = UIColor.gray.cgColor
+    
         
     }
     @objc func shakeItButtonTapped() {
         userResponseLabel.text = answers.randomElement()
+    
     }
 
 }
